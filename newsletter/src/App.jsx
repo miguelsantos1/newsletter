@@ -27,10 +27,10 @@ export default function App() {
         </p>
 
         <form onSubmit={ handleForm } action="post">
-          <span>
             <input type="email" placeholder='DIGITE SEU EMAIL'/>
-            <EnvelopeSimple size={96} color="#00ff6e" />
-          </span>
+            <span>
+              <EnvelopeSimple size={40} color="#00ff6e" />
+            </span>
             <input type='submit' value="ENVIAR"/>
         </form>
 
