@@ -102,3 +102,52 @@ form span {
   top: 11px;
   right: 10px;
 }
+
+.warning-notification {
+  position: fixed;
+  
+  padding: 15px 30px;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #4B4B4B;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  font-size: .8rem;
+  display: none;
+
+  animation: warning .5s;
+}
+
+.warning-notification p {
+  font-size: .8rem;
+  text-align: center;
+  font-weight: bold;
+
+  margin: 0;
+}
+
+.warning-notification div {
+  display: flex;
+  gap: .4rem;
+  color: #4b4b4b;
+  font-size: .6rem;
+  font-weight: 600;
+  align-items: center
+}
+
+
+@keyframes warning {
+ 0% {
+  transform: translate(-50%, -90%);
+  opacity: 0;
+ } 100% {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+ }
+}
