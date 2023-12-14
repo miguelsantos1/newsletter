@@ -1,9 +1,22 @@
+:root {
+  --bg-body: #FDF7E4;
+  --bg: #5BB293;
+  --button: #00AB6E;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: sans-serif, 'Poppins';
+  background-color: var(--bg-body);
+}
+
+header {
+  height: 40vh;
 }
